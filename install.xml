@@ -7,7 +7,7 @@
 	<link>https://github.com/Dima255</link>
  
 <file path="catalog/view/theme/unishop2/template/checkout/uni_totals.twig">
-  <operation>
+  <operation error="skip">
     <search>
       <![CDATA[
         {{ confirm ? 'checked="checked"' }} id="agree"
@@ -22,7 +22,7 @@
 </file>
   
 <file path="catalog\view\theme\unishop2\template\extension\module\uni_quick_order.twig">
-  <operation>
+  <operation error="skip">
     <search>
       <![CDATA[
         name="confirm" value="1"
