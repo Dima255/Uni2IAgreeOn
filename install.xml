@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Uni2 I Agree ON</name>
+	<code>Uni2IAgreeOn</code>
+	<version>1.0</version>
+	<author>&lt;a href=&quot;https://github.com/Dima255&quot; &gt;GitHub&lt;/a&gt;</author>
+	<link>https://github.com/Dima255</link>
+ 
+<file path="catalog/view/theme/unishop2/template/checkout/uni_totals.twig">
+  <operation>
+    <search>
+      <![CDATA[
+        {{ confirm ? 'checked="checked"' }} id="agree"
+      ]]>
+    </search>
+    <add position="replace">
+      <![CDATA[
+        checked="checked" id="agree"
+      ]]>
+    </add>
+  </operation>
+</file>
+  
+<file path="catalog\view\theme\unishop2\template\extension\module\uni_quick_order.twig">
+  <operation>
+    <search>
+      <![CDATA[
+        name="confirm" value="1"
+      ]]>
+    </search>
+    <add position="replace">
+      <![CDATA[
+        name="confirm" value="1" checked
+      ]]>
+    </add>
+  </operation>
+</file> 
+</modification>
